@@ -25,6 +25,7 @@ body {
 
 .header {
   height: 95vh;
+  /* Create bg-img with green mask */
   background-image: linear-gradient(
       to right bottom,
       rgba(126, 213, 111, 0.8),
@@ -34,6 +35,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  /* Create poligon from div */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
