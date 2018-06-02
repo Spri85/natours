@@ -26,13 +26,13 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 
   box-sizing: border-box;
 }
 
 .header {
-  height: 95vh;
+  height: calc(100vh - 6rem);
   /* Create bg-img with green mask */
   background-image: linear-gradient(
       to right bottom,
@@ -47,16 +47,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -71,7 +71,7 @@ body {
 
   backface-visibility: hidden; /* hide shake effect when run animation */
 }
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -84,7 +84,7 @@ body {
    animation-delay: 2s; */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -149,14 +149,10 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-  background-color: #fff;
-  color: #777;
 }
 
 .btn::after {
@@ -172,15 +168,20 @@ body {
   transition: all 0.4s;
 }
 
-.btn-white::after {
-  background-color: #fff;
-}
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-.btn-animated {
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 }
