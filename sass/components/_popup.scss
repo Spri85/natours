@@ -38,6 +38,10 @@
   &__left {
     width: 33.3333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      width: 0;
+    }
   }
 
   &__right {
@@ -45,6 +49,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -58,8 +66,12 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
-
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      column-count: 1;
+    }
   }
 
   &__close {
