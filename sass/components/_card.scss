@@ -164,7 +164,8 @@
   // -------------------------------------------------------------------------------
   // TAB-PORT
   // -------------------------------------------------------------------------------
-  @include respond(tab-port) {
+  @include respond(tab-port),
+    only screen and (hover: none) {
     // FUNCTIONALITY
     height: auto;
     border-radius: 3px;
