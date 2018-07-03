@@ -1,12 +1,12 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
-  // margin-top: calc(-25vh + 6rem); //75vh - 100vh + 6rem
+  // margin-top: calc(-20vh + 6rem); //75vh - 100vh + 6rem
   margin-top: -20vh;
 
-  @include respond(tab-port) {
-    padding: 20rem 0;
-  }
+  // @include respond(tab-port) {
+  //   padding: 20rem 0;
+  // }
 }
 
 .section-features {
